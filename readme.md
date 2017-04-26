@@ -1,6 +1,7 @@
 ## FizzBuzz API
 
 FizzBuzz is a small project that exposes the fizzbuzz endpoint /: min /: max. 
+
 :Min and:max are integers.
 
 The endpoint must print all integers between these 2, but with the following conditions:
@@ -23,8 +24,11 @@ The API returns a JSON.
 ### Server Requirements
 
 PHP >= 5.5.9 
+
 OpenSSL PHP Extension 
+
 PDO PHP Extension 
+
 Mbstring PHP Extension 
   
 ### Installing
