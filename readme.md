@@ -1,11 +1,12 @@
 ## FizzBuzz API
 
-FizzBuzz is a small project that exposes the fizzbuzz endpoint /: min /: max. : Min and: max are integers.
+FizzBuzz is a small project that exposes the fizzbuzz endpoint /: min /: max. 
+:Min and:max are integers.
 
 The endpoint must print all integers between these 2, but with the following conditions:
-1) If the number is multiples of 3 -> print "Fizz"
-2) If the number is multiples of 5 -> print "Buzz"
-3) If multiple of both -> print "FizzBuzz"
+1. If the number is multiples of 3 -> print "Fizz"
+2. If the number is multiples of 5 -> print "Buzz"
+3. If multiple of both -> print "FizzBuzz"
 
 Request Example:
 GET / fizzbuzz / 1/5
@@ -20,11 +21,11 @@ The API returns a JSON.
 ## Instalation
 
 ### Server Requirements
-PHP >= 5.5.9
-OpenSSL PHP Extension
-PDO PHP Extension
-Mbstring PHP Extension
-Composer
+
+PHP >= 5.5.9 
+OpenSSL PHP Extension 
+PDO PHP Extension 
+Mbstring PHP Extension 
   
 ### Installing
 
@@ -39,15 +40,16 @@ composer install
 3. and finally
 
 ```php
-php -S localhost: 8080 -t public /
+php -S localhost:8080 -t public/
 ```
 
 The application runs at http://localhost:8080/fizzbuzz/1/5
 
 ## Run Unit Tests
 
-At the root of the project run
-```
+At the root of the project run:
+
+```bash
 vendor/bin/phpunit
 ```
 
