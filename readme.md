@@ -1,21 +1,56 @@
-## Lumen PHP Framework
+## FizzBuzz API
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+FizzBuzz is a small project that exposes the fizzbuzz endpoint /: min /: max. : Min and: max are integers.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+The endpoint must print all integers between these 2, but with the following conditions:
+1) If the number is multiples of 3 -> print "Fizz"
+2) If the number is multiples of 5 -> print "Buzz"
+3) If multiple of both -> print "FizzBuzz"
 
-## Official Documentation
+Request Example:
+GET / fizzbuzz / 1/5
+1
+2
+Fizz
+4
+Buzz
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+The API returns a JSON.
 
-## Security Vulnerabilities
+## Instalation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+### Server Requirements
+PHP >= 5.5.9
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Composer
+  
+### Installing
 
-### License
+1. Composer must be installed first
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+2. Then move to the root of the project and execute:
+
+```bash
+composer install
+```
+
+3. and finally
+
+```php
+php -S localhost: 8080 -t public /
+```
+
+The application runs at http://localhost:8080/fizzbuzz/1/5
+
+## Run Unit Tests
+
+At the root of the project run
+```
+vendor/bin/phpunit
+```
+
+## License
+
+The FizzBuzz API is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
