@@ -1,8 +1,5 @@
 <?php
 
-use App\Models\FizzBuzz;
-use App\Exceptions\FizzBuzzException;
-
 class FizzBuzzControllerTest extends TestCase
 {
     /**

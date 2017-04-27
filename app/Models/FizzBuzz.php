@@ -8,7 +8,6 @@
 
 namespace App\Models;
 
-use Log;
 use App\Exceptions\FizzBuzzException;
 
 /**
