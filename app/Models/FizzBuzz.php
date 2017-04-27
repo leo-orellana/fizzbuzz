@@ -44,20 +44,17 @@ class FizzBuzz
         
         $result = [];
         for ($i = $min; $i <= $max; $i++) {
-            switch ($i) {
-                case $i % 3 == 0 && $i % 5 == 0:
-                    $result[] = 'FizzBuzz';
-                    break;
-                case $i % 3 == 0:
-                    $result[] = 'Fizz';
-                    break;
-                case $i % 5 == 0:
-                    $result[] = 'Buzz';
-                    break;
-                default:
-                    $result[] = $i;
-                    break;
+            $value = '';
+            if($i % 3 == 0) {
+                $value .= 'Fizz';
+            } 
+            if ($i % 5 == 0) {
+                $value .= 'Buzz';
             }
+            if ($value === '') {
+                $value = $i;
+            }
+            $result[] = $value;
         }
         return $result;
     }
